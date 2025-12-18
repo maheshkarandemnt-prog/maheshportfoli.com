@@ -1,4 +1,5 @@
 import './Hero.css';
+import myprofile from '../assets/myprofile.jpg';
 
 const Hero = () => {
     const handleDownloadCV = () => {
@@ -70,12 +71,11 @@ const Hero = () => {
                 <div className="hero-image animate-fadeIn" style={{ animationDelay: '0.3s' }}>
                     <div className="image-wrapper">
                         <div className="image-bg"></div>
-                        <div className="profile-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
-                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                            </svg>
-                            <span>Your Photo</span>
-                        </div>
+                        <img
+                            src={myprofile}
+                            alt="Mahesh Karande"
+                            className="profile-image"
+                        />
                         <div className="floating-card card-1">
                             <span className="card-icon">⚛️</span>
                             <span>React</span>
